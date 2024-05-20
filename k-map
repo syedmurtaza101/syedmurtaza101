@@ -1,0 +1,51 @@
+#include <iostream>
+#include <vector>
+#include <math.h>
+#include <algorithm>
+
+void displayKMap(const std::vector<std::vector<int>>& kmap, int variables) {
+
+}
+
+std::string simplifyKMap(const std::vector<std::vector<int>>& kmap, int variables) {
+
+    return "Simplified Equation";
+}
+
+int main() {
+    int variables;
+    std::cout << "Enter the number of variables (2-5): ";
+    std::cin >> variables;
+
+    if (variables < 2 || variables > 5) {
+        std::cout << "Invalid number of variables. Please enter a number between 2 and 5." << std::endl;
+        return 1;
+    }
+
+    int size = pow(2, variables);
+    std::vector<std::vector<int>> kmap(size, std::vector<int>(size, 0));
+
+    int onBits;
+    std::cout << "Enter the number of ON bits: ";
+    std::cin >> onBits;
+
+    std::cout << "Enter the location of ON bits (min or max terms): ";
+    for (int i = 0; i < onBits; ++i) {
+        int bitPosition;
+        std::cin >> bitPosition;
+     
+    }
+
+    displayKMap(kmap, variables);
+
+    std::string simplifiedEquation = simplifyKMap(kmap, variables);
+    std::cout << simplifiedEquation << std::endl;
+
+    return 0;
+}
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"Hello World!";
+}
+
